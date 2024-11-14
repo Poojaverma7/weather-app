@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+Weather App
+A weather forecasting web application built with React that provides current weather and a 24-hour forecast for any searched city. This project utilizes the WeatherAPI to fetch weather data and presents it in a user-friendly format with hourly updates.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Table of Contents
+Overview
+Features
+Technologies
+Setup Instructions
+How to Use
+Components
+APIs Used
+Folder Structure
+License
+Contributing
+Repository Link
+Overview
+This weather app displays the current weather conditions along with an hourly forecast for the next 24 hours. Users can search for any city worldwide, and the app will display accurate and updated weather information.
 
-## Available Scripts
+Features
+Search weather conditions by city name.
+Display current temperature, weather description, and an icon representing weather conditions.
+24-hour hourly forecast, including temperature and weather conditions.
+Auto-fetch default weather data for 'Canada' on initial load.
+Responsive design optimized for both mobile and desktop devices.
+Error handling for cases where no results are found.
+Technologies
+React (Create React App)
+JavaScript
+CSS (for styling)
+WeatherAPI (for fetching weather data)
+Setup Instructions
+To set up the project locally, follow these steps:
 
-In the project directory, you can run:
+Prerequisites
+Ensure you have the following installed:
 
-### `npm start`
+Node.js (version 14 or later)
+npm or yarn
+Installation
+Clone the Repository:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copy code
+git clone https://github.com/yourusername/weather-app.git
+Navigate to the Project Directory:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+Copy code
+cd weather-app
+Install Dependencies:
 
-### `npm test`
+bash
+Copy code
+npm install
+or
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+bash
+Copy code
+yarn install
+Set Up Environment Variables:
 
-### `npm run build`
+Create a .env file in the root directory of the project and add your WeatherAPI key:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+makefile
+Copy code
+REACT_APP_API_KEY=your_weather_api_key_here
+Replace your_weather_api_key_here with your actual API key from WeatherAPI.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Start the Application:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash
+Copy code
+npm start
+or
 
-### `npm run eject`
+bash
+Copy code
+yarn start
+The app should open in your default web browser at http://localhost:3000.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+How to Use
+Enter a city name in the search bar to get current weather information and a 24-hour forecast.
+The app will automatically display the weather data for the default city ('Canada') on the first load.
+If the entered city is not found or there's an error, an error message will appear.
